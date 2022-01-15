@@ -1,3 +1,5 @@
+- [HOME](../../../)
+```
 # ss -tunelp | grep 15672
 tcp   LISTEN  0       128                    0.0.0.0:15672        0.0.0.0:*      users:(("beam.smp",pid=9525,fd=71)) uid:111 ino:39934 sk:9 <->
 
@@ -34,3 +36,4 @@ rabbitmqctl list_user_permissions user
 Delete user permissions:
 
 rabbitmqctl clear_permissions -p /myvhost user
+```

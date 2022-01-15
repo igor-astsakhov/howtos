@@ -1,4 +1,7 @@
+- [HOME](../../../)
 
+### Partition
+```
 Verify the partitions available on the server: fdisk -l
 Choose which device you wish to use (such as /dev/sda or /dev/sdb)
 Run fdisk /dev/sdX (where X is the device you would like to add the partition to)
@@ -10,3 +13,4 @@ Format the partition by doing:  ‘mke2fs -j /dev/sdaX’ – where X is the num
 Create a directory where you wish to mount the new drive, for example: /newpartition.  ‘mkdir -p /newpartition’
 To mount, you can use the following command: ‘mount /dev/sdaX /newpartition’
 If you would like the drive to be mounted automatically each time you boot, add the following to /etc/fstab: ‘/dev/sdaX /newpartition ext3 defaults 1 2’
+```

@@ -1,3 +1,5 @@
+- [HOME](../../../)
+```
 gtf 1920 1200 60 -x
 xrandr --newmode "1920x1200_60.00"  193.16  1920 2048 2256 2592  1200 1201 1204 1242  -HSync +Vsync
 xrandr --addmode VGA1 1920x1200_60.00
@@ -5,26 +7,16 @@ xrandr --output VGA1 --mode 1920x1200_60.00
   294  xrandr -
   295  xrandr --help 
   296  xrandr -q
-  331  xrandr 
-  337  xrandr 
   338  xrandr --output HDMI1 --auto
   339  xrandr
   340  xrandr --output HDMI1 --rate 59.95
-  341  xrandr 
-  348  xrandr
   351  xrandr --newmode "1920x1200_60.00"  193.16  1920 2048 2256 2592  1200 1201 1204 1242  -HSync +Vsync
   352  xrandr --addmode HDMI1 1920x1200_60.00
-  353  xrandr
-  355  xrandr
-  824  xrandr 
-  873  xrandr
-  876  xrandr
   879  xrandr --delmode "1920x1200_60.00"
   880  xrandr --delmode 
   881  xrandr --help --delmode 
   882  xrandr --delmode HDMI1 "1920x1200_60.00"
   887  xrandr --delmode HDMI1 1920x1200_60.00
-  888  xrandr 
   889  xrandr --delmode eDP1 1920x1200_60.00
   890   xrandr --output HDMI1 --auto
   891  xrandr 
@@ -77,6 +69,4 @@ xrandr --output VGA1 --mode 1920x1200_60.00
   998  xrandr --delmode VIRTUAL1 1920x1200_60.00
   999  xrandr --output HDMI1 --mode 1680x1050_60.00
  1000  xrandr --output eDP1 --off
- 1001  history | grep 'cvt|xrandr'
- 1002  history | grep -E 'cvt|xrandr'
- 1003  history | grep -E 'cvt|xrandr' >> HOWTO-MONITOR 
+ ```
