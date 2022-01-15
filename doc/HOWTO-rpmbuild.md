@@ -17,3 +17,10 @@ php_inidir // .ini dir
 php_extdir // so dir
 
 
+$ yum install -y rpmdevtools rpmlint
+
+##### macro file
+~/.rpmmacros
+%_topdir      %(echo $HOME)/rpmbuild
+%_smp_mflags  -j3
+%__arch_install_post   /usr/lib/rpm/check-rpaths   /usr/lib/rpm/check-buildroot
