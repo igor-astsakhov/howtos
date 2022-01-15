@@ -22,8 +22,7 @@ yum install php-composer php-common php-soap php-cli php-xml php-pdo php-mysqlnd
 installed pear from the website
 installed pecl
 
-# pear channel-update pear.php.net
-# pecl channel-update pecl.php.net
-
-pecl install mongodb-1.4.4
+$ pear channel-update pear.php.net
+$ pecl channel-update pecl.php.net
+$ pecl install mongodb-1.4.4
 
