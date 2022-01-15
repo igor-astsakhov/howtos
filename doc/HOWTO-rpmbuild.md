@@ -50,12 +50,13 @@ $ sudo rpm --verbose --erase ehlo
 ```
 
 ### create a repo in a dir 
->[[ -z $(ps auxww|grep genpkgmetadata|grep -v grep) ]] && createrepo --update ~/rpmbuild/RPMS/x86_64/
-
-
-`$ sudo touch /etc/yum.repos.d/myrepo.repo`
+```
+[[ -z $(ps auxww|grep genpkgmetadata|grep -v grep) ]] && createrepo --update ~/rpmbuild/RPMS/x86_64/
+```
 
 ```
+$ sudo touch /etc/yum.repos.d/myrepo.repo
+
 **[myrepo]**
 name=STABLE Repository - x86_64
 baseurl=file:///home/igor-astsakhov/rpmbuild/RPMS/x86_64/
