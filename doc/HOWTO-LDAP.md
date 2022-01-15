@@ -1,4 +1,4 @@
-- [HOME](../)
+- [HOME](../../)
 
 ## How to do ldap commands
 
