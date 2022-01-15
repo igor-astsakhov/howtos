@@ -1,29 +1,34 @@
 ### RPM BUILD
-
+```
+$ yum install -y rpmdevtools rpmlint
 $ rpmbuild -bs // source
 $ rpmbuild -ba // both
 $ rpmbuild -bb // rpm
+```
 
-.Unpack RPM, in the current directory
+**.Unpack RPM, in the current directory**
 
+```
 $ rpm2cpio name.rpm | cpio -idmo
-
-rpmbuild --showrc // shows the variables defined
-rpmbuild --eval %{_bindir} // shows the value for variable
+$ rpmbuild --showrc // shows the variables defined
+$ rpmbuild --eval %{_bindir} // shows the value for variable
+```
 
 ##### php vars:
+```
 php_version // version
 php_inidir // .ini dir
 php_extdir // so dir
+```
 
 
-$ yum install -y rpmdevtools rpmlint
-
-##### macro file (https://docs.fedoraproject.org/en-US/packaging-guidelines/RPMMacros/)
+##### macro file [RPM Macros](https://docs.fedoraproject.org/en-US/packaging-guidelines/RPMMacros/).
+```
 ~/.rpmmacros
 %_topdir      %(echo $HOME)/rpmbuild
 %_smp_mflags  -j3
 %__arch_install_post   /usr/lib/rpm/check-rpaths   /usr/lib/rpm/check-buildroot
+```
 
 ```
 $ rpmdev-setuptree
@@ -45,20 +50,19 @@ $ sudo rpm --verbose --erase ehlo
 ```
 
 ### create a repo in a dir 
-[[ -z $(ps auxww|grep genpkgmetadata|grep -v grep) ]] && createrepo --update ~/rpmbuild/RPMS/x86_64/
+>[[ -z $(ps auxww|grep genpkgmetadata|grep -v grep) ]] && createrepo --update ~/rpmbuild/RPMS/x86_64/
 
 
-$ sudo touch /etc/yum.repos.d/myrepo.repo
+`$ sudo touch /etc/yum.repos.d/myrepo.repo`
 
-
+```
 **[myrepo]**
-
 name=STABLE Repository - x86_64
 baseurl=file:///home/igor-astsakhov/rpmbuild/RPMS/x86_64/
 enabled=1
 gpgcheck=0
 sslverify=false
+```
 
-
-$ yum clean expire-cache && yum install ehlo
+`$ yum clean expire-cache && yum install ehlo`
 
