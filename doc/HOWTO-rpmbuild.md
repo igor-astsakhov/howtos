@@ -36,7 +36,7 @@ $ rpmdev-newspec ehlo
 $ rpm -qi ehlo
 $ rpmbuild -bb ~/rpmbuild/SPECS/ehlo.spec
 
-$ sudo dnf install ~/rpmbuild/RPMS/noarch/ehlo-0.0.1-1.el8.noarch.rpm
+> $ sudo dnf install ~/rpmbuild/RPMS/noarch/ehlo-0.0.1-1.el8.noarch.rpm
 $ sudo rpm -ivh ~/rpmbuild/RPMS/noarch/ehlo-0.0.1-1.el8.noarch.rpm
 $ rpm -qf /bin/ehlo
 $ rpm -q ehlo --changelog
@@ -47,7 +47,7 @@ $ sudo rpm --verbose --erase ehlo
 [[ -z $(ps auxww|grep genpkgmetadata|grep -v grep) ]] && createrepo --update ~/rpmbuild/RPMS/x86_64/
 
 
-$ sudo touch /etc/yum.repos.d/myrepo.repo
+> $ sudo touch /etc/yum.repos.d/myrepo.repo
 
 [myrepo]
 name=STABLE Repository - x86_64
@@ -57,5 +57,5 @@ gpgcheck=0
 sslverify=false
 
 
-$ yum clean expire-cache && yum install ehlo
+> $ yum clean expire-cache && yum install ehlo
 
