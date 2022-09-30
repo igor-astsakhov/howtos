@@ -25,7 +25,7 @@ Living Room:
     Channel: 149(p) + 153 + 157 + 161
     local5.karinka.com 9C:C9:EB:14:BF:F8
 
-Garage:
+Garage: =======
     dLink
     DIR-810L
     WAN: 6C:19:8F:ED:D4:35
@@ -40,6 +40,7 @@ Garage:
     5 ghz 802.11 ac/n/a [HWAddr 6C:19:8F:ED:D4:36]
     Channel 157 - 5,785 GHz
     Auto 20/40 MHZ
+    -------------------------------------------------
 
 Office:
 
@@ -61,7 +62,7 @@ Meta for Living Room:
 Wireless:
 IP AddressDevice NameMAC AddressChannelSignal StrengthLink Rate
 10.0.2.79qca-ioeboard74:40:BE:C2:59:416-60dbm72Mbps
-10.0.2.76blink-sync-module00:03:7F:68:D4:366-48dbm72Mbps
+10.0.2.76 blink-sync-module 00:03:7F:68:D4:36 6-48dbm 72Mbps
 10.0.2.28<unknown>DE:6C:AC:1E:62:906-63dbm144Mbps
 10.0.2.82<unknown>3E:23:08:5D:8E:C96-46dbm144Mbps
 10.0.2.31ALINAS-MBP14:7D:DA:C5:C5:C148-66dbm390Mbps
@@ -85,5 +86,19 @@ IP AddressDevice NameMAC Address
 10.0.2.3aerog12kD8:5E:D3:0E:7F:95
 169.254.246.126<unknown>F0:46:3B:55:70:3E
 
+
+ ~  i  howtos  nmcli dev wifi                                                                                                                       main 
+IN-USE  BSSID              SSID                    MODE   CHAN  RATE        SIGNAL  BARS  SECURITY
+        B8:69:F4:3C:E2:A5  local1.aquaregiafx.com  Infra  11    270 Mbit/s  97      ▂▄▆█  WPA2
+        2C:C8:1B:1E:5A:87  local4.karinka.com      Infra  4     130 Mbit/s  87      ▂▄▆█  WPA2
+        6C:19:8F:ED:D4:36  local5.karinka.com      Infra  157   135 Mbit/s  87      ▂▄▆█  WPA2
+        6C:19:8F:ED:D4:34  local4.karinka.com      Infra  8     270 Mbit/s  85      ▂▄▆█  WPA2
+*       2C:C8:1B:90:33:B2  local5.karinka.com      Infra  36    540 Mbit/s  84      ▂▄▆█  WPA2
+        9C:C9:EB:14:BF:F6  local4.karinka.com      Infra  6     130 Mbit/s  82      ▂▄▆█  WPA2
+        9C:C9:EB:14:BF:F7  local5.karinka.com      Infra  48    270 Mbit/s  70      ▂▄▆_  WPA2
+        9C:C9:EB:14:BF:F8  local5.karinka.com      Infra  149   540 Mbit/s  70      ▂▄▆_  WPA2
+        B4:75:0E:52:13:D2  local4.karinka.com      Infra  6     195 Mbit/s  64      ▂▄▆_  --
+        B4:75:0E:52:13:E4  local5.karinka.com      Infra  52    405 Mbit/s  50      ▂▄__  WPA2
+        98:DA:C4:7E:30:41  arris surfboard_EXT     Infra  11    130 Mbit/s  24      ▂___  WPA1 WPA2
 
 
