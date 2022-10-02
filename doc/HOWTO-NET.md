@@ -5,28 +5,32 @@ Downstairs:
     WAN MACB4:75:0E:52:13:D0
     Wireless MACB4:75:0E:52:13:D2
 
-    wl0 = chan 6 ; CW 20 MHz
+    wl0 = chan 1 ; CW 20 MHz
+        Frequency: 2412
         HWAddr [B4:75:0E:52:13:D2]
 
-    wl1 - Chan 52 + 54 ; CW Wide 50MHz (HT40), Extention Channel: Lower
+    wl1 - Chan 157 - 161 ; CW Wide 40MHz (HT40), Extention Channel: Lower
+        Frequency: 5795
         HWAddr [B4:75:0E:52:13:E4]
 
 Living Room:
     Nighthawk X6S Tri-Band Mesh Extender
     nighthawkx6s.aquaregiafx.com 10.0.2.72
-    2.4 ghz chan 6
+    2.437 ghz chan 6
     local4.karinka.com 9C:C9:EB:14:BF:F6
 
     5Ghz - 1 (48)
-    Channel: 36 + 40 + 44 + 48(p)
+    Channel:44 - 48(p)
+    Frequency: 5230
     local5.karinka.com 9C:C9:EB:14:BF:F7
 
     5ghz - 2 (149)
-    Channel: 149(p) + 153 + 157 + 161
+    Channel: 149(p) + 153
+    Frequency: 5755
     local5.karinka.com 9C:C9:EB:14:BF:F8
 
 Garage: =======
-    dLink
+    dLink - DEPRECATED!
     DIR-810L
     WAN: 6C:19:8F:ED:D4:35
     LAN:   6C:19:8F:ED:D4:34
@@ -42,15 +46,35 @@ Garage: =======
     Auto 20/40 MHZ
     -------------------------------------------------
 
+    Blackhawk - R6260
+    Internet Port
+    MAC Address9C:C9:EB:5C:0F:AD
+
+    2.4ghz 802.11 n/g/b [HWAddr 6C:19:8F:ED:D4:34]
+    Channel 11 - 2.462 GHz
+    Transmission Rate 54
+    20 MHz
+
+    5 ghz 802.11 ac/n/a [HWAddr 6C:19:8F:ED:D4:36]
+    Channel 149-153 - 5.755 GHz
+    20/40 MHZ
+
+    LAN     9C:C9:EB:5C:0F:AB
+    10.0.2.70
+
+
+
 Office:
 
+(Channel 36-40)
 0  R name="wlan1" mtu=1500 l2mtu=1600 mac-address=2C:C8:1B:90:33:B2 arp=enabled interface-type=QCA9984 mode=ap-bridge ssid="local5.karinka.com"
-frequency=5180 band=5ghz-a/n/ac channel-width=20/40mhz-XX secondary-channel="" scan-list=default wireless-protocol=802.11 vlan-mode=no-tag vlan-id=1
+frequency=5190 band=5ghz-a/n/ac channel-width=20/40mhz-XX secondary-channel="" scan-list=default wireless-protocol=802.11 vlan-mode=no-tag vlan-id=1
 wds-mode=disabled wds-default-bridge=none wds-ignore-ssid=no bridge-mode=enabled default-authentication=yes default-forwarding=yes
 default-ap-tx-limit=0 default-client-tx-limit=0 hide-ssid=no security-profile=5ghz compression=no
 
+(Channel 1)
 1  R name="wlan2" mtu=1500 l2mtu=1600 mac-address=2C:C8:1B:1E:5A:87 arp=enabled interface-type=Atheros AR9300 mode=ap-bridge ssid="local4.karinka.com"
-frequency=2427 band=2ghz-b/g/n channel-width=20mhz secondary-channel="" scan-list=default wireless-protocol=802.11 vlan-mode=no-tag vlan-id=1
+frequency=2412 band=2ghz-b/g/n channel-width=20mhz secondary-channel="" scan-list=default wireless-protocol=802.11 vlan-mode=no-tag vlan-id=1
 wds-mode=disabled wds-default-bridge=none wds-ignore-ssid=no bridge-mode=enabled default-authentication=yes default-forwarding=yes
 default-ap-tx-limit=0 default-client-tx-limit=0 hide-ssid=no security-profile=default compression=no
 
