@@ -7,9 +7,11 @@ Sometimes I forget and need to lookit up but I run on so many servers that the r
 - [el6 Php 7.3 Update](../main/doc/HOWTO-Update-Centos6.md)
 
 - [HOWTO-BLUETOOTH](../main/doc/HOWTO-BLUETOOTH.md)
+- [HOWTO-CERTBOT](../main/doc/HOWTO-CERTBOT)
 - [HOWTO-INTEL](../main/doc/HOWTO-INTEL.md)
 - [HOWTO-LDAP](../main/doc/HOWTO-LDAP.md)
 - [HOWTO-MONITOR](../main/doc/HOWTO-MONITOR.md)
+- [HOWTO-NET](../main/doc/HOWTO-NET.md)
 - [HOWTO-PARTITION](../main/doc/HOWTO-PARTITION.md)
 - [HOWTO-RABBITMQ](../main/doc/HOWTO-RABBITMQ.md)
 - [HOWTO-SQLPLUS](../main/doc/HOWTO-SQLPLUS.md)
